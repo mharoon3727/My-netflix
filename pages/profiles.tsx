@@ -22,8 +22,36 @@ return {
 
 const Profiles = () => {
     return (
-        <div>
-            <p className="text-white text text-4xl"> Profiles</p>
+        <div className="flex items-center h-full justify-center" >
+            <div className="flex flex-col" >
+                <h1 className="text-3xl text-white md:text-6xl text-center" > Who is watching? </h1>
+                <div className="flex items-center justify-center gap-8 mt-10" >
+                    <div onClick={() => {} } >
+                        <div className="group flex-row w-44 mx-auto" >
+
+                        <div className="
+                        w-44
+                        h-44
+                        rounded-md
+                        flex
+                        items-center
+                        border-2
+                        border-transparent
+                        group-hover:cursor-pointer
+                        group-hover:border-white
+                        overflow-hidden
+                        " >
+                            <img src="/images/default-blue.png" alt="error"/>
+
+                        </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
         </div>
     )
 };
