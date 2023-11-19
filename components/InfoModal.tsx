@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { FaXmark } from "react-icons/fa6";
 
-import PlayButton from '@/components/PlayButton';
+import PlayButton from './PlayButton';
 import FavoriteButton from '@/components/FavoriteButton';
 import useInfoModal from '@/hooks/useInfoModal';
 import useMovie from '@/hooks/useMovie';
