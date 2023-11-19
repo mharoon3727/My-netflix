@@ -1,8 +1,8 @@
-import useBillboard from '@/hooks/useBillboard'
+import useBillboard from "@/hooks/useBillboard"
 import { IoMdInformationCircleOutline } from "react-icons/io";
-import React, { useCallback } from 'react';
-import PlayButton from '@/components/PlayButton';
-import useInfoModal from '@/hooks/useInfoModal';
+import React, { useCallback } from "react";
+import PlayButton from "@/components/PlayButton";
+import useInfoModal from "@/hooks/useInfoModal";
 
 const Billboard: React.FC = () => {
     const { openModal } = useInfoModal();

@@ -1,11 +1,11 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from "react";
 // import { BellIcon, MagnifyingGlassIcon, ChevronDownIcon } from 'react-icons/';
 import { CiBellOn } from "react-icons/ci";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { FaChevronDown } from "react-icons/fa";
-import AccountMenu from '@/components/AccountMenu';
-import MobileMenu from '@/components/MobileMenu';
-import NavbarItem from '@/components/NavbarItem';
+import AccountMenu from "@/components/AccountMenu";
+import MobileMenu from "@/components/MobileMenu";
+import NavbarItem from "@/components/NavbarItem";
 
 const TOP_OFFSET = 66;
 
@@ -23,10 +23,10 @@ const Navbar = () => {
       }
     }
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     }
   }, []);
 
@@ -40,7 +40,7 @@ const Navbar = () => {
 
   return (
     <nav className="w-full fixed z-40">
-      <div className={`px-4 md:px-16 py-6 flex flex-row items-center transition duration-500 ${showBackground ? 'bg-zinc-900 bg-opacity-90' : ''}`}>
+      <div className={`px-4 md:px-16 py-6 flex flex-row items-center transition duration-500 ${showBackground ? "bg-zinc-900 bg-opacity-90" : ""}`}>
         <img src="/images/logo.png" className="h-4 lg:h-7" alt="Logo" />
         <div className="flex-row ml-8 gap-7 hidden lg:flex">
           <NavbarItem label="Home" active />
@@ -52,7 +52,7 @@ const Navbar = () => {
         </div>
         <div onClick={toggleMobileMenu} className="lg:hidden flex flex-row items-center gap-2 ml-8 cursor-pointer relative">
           <p className="text-white text-sm">Browse</p>
-          <FaChevronDown className={`w-4 text-white fill-white transition ${showMobileMenu ? 'rotate-180' : 'rotate-0'}`} />
+          <FaChevronDown className={`w-4 text-white fill-white transition ${showMobileMenu ? "rotate-180" : "rotate-0"}`} />
           <MobileMenu visible={showMobileMenu} />
         </div>
         <div className="flex flex-row ml-auto gap-7 items-center">
@@ -66,7 +66,7 @@ const Navbar = () => {
             <div className="w-6 h-6 lg:w-10 lg:h-10 rounded-md overflow-hidden">
               <img src="/images/default-blue.png" alt="" />
             </div>
-            <FaChevronDown className={`w-4 text-white fill-white transition ${showAccountMenu ? 'rotate-180' : 'rotate-0'}`} />
+            <FaChevronDown className={`w-4 text-white fill-white transition ${showAccountMenu ? "rotate-180" : "rotate-0"}`} />
             <AccountMenu visible={showAccountMenu} />
           </div>
         </div>

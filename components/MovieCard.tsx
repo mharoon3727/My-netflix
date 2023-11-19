@@ -1,9 +1,9 @@
-import React, { useCallback } from 'react';
-import { useRouter } from 'next/router';
+import React, { useCallback } from "react";
+import { useRouter } from "next/router";
 import { FaChevronDown } from "react-icons/fa";
 import { FaPlayCircle } from "react-icons/fa";
-import FavoriteButton from '@/components/FavoriteButton';
-import useInfoModalStore from '@/hooks/useInfoModal';
+import FavoriteButton from "@/components/FavoriteButton";
+import useInfoModalStore from "@/hooks/useInfoModal";
 
 interface MovieCardProps {
   data: Record<string, any>;

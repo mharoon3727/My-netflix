@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 import { FaPlayCircle } from "react-icons/fa";
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
 
 interface PlayButtonProps {
   movieId: string;

@@ -69,7 +69,7 @@ export const authOptions: AuthOptions = {
   secret: process.env.NEXTAUTH_SECRET,
   cookies: {
     sessionToken: {
-      name: `__Secure-next-auth.session-token`,
+      name: "__Secure-next-auth.session-token",
       options: {
         httpOnly: true,
         sameSite: "none",
@@ -79,7 +79,7 @@ export const authOptions: AuthOptions = {
     },
 
     callbackUrl: {
-      name: `__Secure-next-auth.callback-url`,
+      name: "__Secure-next-auth.callback-url",
       options: {
         sameSite: "none",
         path: "/",
@@ -87,7 +87,7 @@ export const authOptions: AuthOptions = {
       },
     },
     csrfToken: {
-      name: `__Host-next-auth.csrf-token`,
+      name: "__Host-next-auth.csrf-token",
       options: {
         httpOnly: true,
         sameSite: "none",
@@ -96,7 +96,7 @@ export const authOptions: AuthOptions = {
       },
     },
     pkceCodeVerifier: {
-      name: `__Secure-next-auth.pkce.code_verifier`,
+      name: "__Secure-next-auth.pkce.code_verifier",
       options: {
         httpOnly: true,
         sameSite: "none",
@@ -105,7 +105,7 @@ export const authOptions: AuthOptions = {
       },
     },
     state: {
-      name: `__Secure-next-auth.state`,
+      name: "__Secure-next-auth.state",
       options: {
         httpOnly: true,
         sameSite: "none",

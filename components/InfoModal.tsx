@@ -1,10 +1,10 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from "react";
 import { FaXmark } from "react-icons/fa6";
 
-import PlayButton from './PlayButton';
-import FavoriteButton from '@/components/FavoriteButton';
-import useInfoModal from '@/hooks/useInfoModal';
-import useMovie from '@/hooks/useMovie';
+import PlayButton from "./PlayButton";
+import FavoriteButton from "@/components/FavoriteButton";
+import useInfoModal from "@/hooks/useInfoModal";
+import useMovie from "@/hooks/useMovie";
 
 interface InfoModalProps {
   visible?: boolean;
@@ -35,7 +35,7 @@ const InfoModal: React.FC<InfoModalProps> = ({ visible, onClose }) => {
   return (
     <div className="z-50 transition duration-300 bg-black bg-opacity-80 flex justify-center items-center overflow-x-hidden overflow-y-auto fixed inset-0">
       <div className="relative w-auto mx-auto max-w-3xl rounded-md overflow-hidden">
-        <div className={`${isVisible ? 'scale-100' : 'scale-0'} transform duration-300 relative flex-auto bg-zinc-900 drop-shadow-md`}>
+        <div className={`${isVisible ? "scale-100" : "scale-0"} transform duration-300 relative flex-auto bg-zinc-900 drop-shadow-md`}>
 
           <div className="relative h-96">
             <video poster={data?.thumbnailUrl} autoPlay muted loop src={data?.videoUrl} className="w-full brightness-[60%] object-cover h-full" />
